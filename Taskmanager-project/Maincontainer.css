@@ -1,0 +1,48 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .app-container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .filter-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+  }
+  .button{
+    margin-top: 50px;
+  }
+  
+  .filter-buttons button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .filter-buttons button.active {
+    background: #007bff;
+    color: white;
+  }
+  
+  .task-list {
+    margin-top: 15px;
+  }

@@ -1,0 +1,95 @@
+.task-list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .task {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    border-left: 6px solid #007bff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .task.completed {
+    border-left-color: #28a745;
+    background: #e6f9e6;
+  }
+  
+  .task h3 {
+    font-size: 1.4rem;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .task p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .task-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .input-title,.input-description,.save-button,.cancel-button{
+    padding: 15px 10px;
+  }
+
+  .task-buttons button {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+  }
+  
+  .task-buttons button:hover {
+    transform: scale(1.05);
+  }
+  
+  .task-buttons .done-btn {
+    background: #28a745;
+    color: white;
+  }
+  
+  .task-buttons .edit-btn {
+    background: #ffc107;
+    color: black;
+  }
+  
+  .task-buttons .delete-btn {
+    background: #dc3545;
+    color: white;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .task {
+      padding: 12px;
+    }
+  
+    .task h3 {
+      font-size: 1.2rem;
+    }
+  
+    .task p {
+      font-size: 0.9rem;
+    }
+  
+    .task-buttons {
+      flex-direction: column;
+    }
+  
+    .task-buttons button {
+      width: 100%;
+    }
+  }
+  
